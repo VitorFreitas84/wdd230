@@ -1,8 +1,14 @@
 @media screen and (min-width: 500px) {
     header {
-        background-color: rgb(32, 80, 157);
-        color: white;
-        padding: 1rem;
+        display: grid;
+        margin: auto;
+        max-width: 800px;
+        grid-template-columns: 1fr 1fr;
+        background-color: #ebebeb;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
         text-align: center;
     }
 
