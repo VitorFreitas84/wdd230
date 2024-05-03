@@ -1,0 +1,66 @@
+/* Larger Screen Adjustments - larger.css */
+@media (min-width: 768px) {
+    body {
+        padding: 40px;
+    }
+
+    header, footer {
+        text-align: left;
+        padding: 20px 40px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .sidebar {
+        flex: 1;
+    }
+
+    .content {
+        flex: 3;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+/* More specific component styling */
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.call-to-action {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.event-card, .weather-card, .company-spotlight {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
