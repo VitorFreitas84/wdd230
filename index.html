@@ -1,81 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Vitor H S Freitas - WDD 230 - Web Frontend Development</title>
-  <meta name="description"
-    content=" The WDDe 230 - Web Frontend Development course assignment portal by Vitor Hugo Santos de Freitas to add all works related to this topic. ">
-  <meta name="author" content="Vitor H S Freitas">
-  
-  <link rel="stylesheet" href="styles/styles.css">
-  
-  <link rel="shortcut icon" type="images/ico" href="images/favicon.ico"/>
-  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitor Hugo Santos de Freitas - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Welcome to Vince Pag-ong's course assignment portal for WDD 230 - Web Frontend Development. Explore the various projects of the whole course, including chamber, site plan, and form.">
+    <meta name="author" content="Vince Pag-ong">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <meta property="og:title" content="WDD 230 (Web Frontend Development) progress and task links">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://vinceoooy.github.io/wdd230/images/hometown.jpg">
+    <meta property="og:url" content="https://vinceoooy.github.io/wdd230">
+</head>
+<body>
+    <header>
+        <img id="profil-picture" src="images/profile.jpg"  alt="Vitor Hugo Santos de Freitas Profile Picture"  width="75" height="100">
+        <span>Vitor Hugo Santos de Freitas</span>
+        <button id="menu"></button>
+        <div id="mode">
+            <img src="images/moon.svg" alt="dark mode" id="darkBtn" width="23" height="23">
+            <img src="images/sun.svg" alt="light mode" id="lightBtn" width="23" height="23" style="display: none;">
+        </div>
+    </header>
+    
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+        </ul>
+    </nav>
 
-  <!--  Essential META Tags -->
-  <meta property="og:title" content="WDD 230 - Web Frontend Development Site">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://github.com/VitorFreitas84/wdd230/blob/byui/images/profile.jpg">
-  <meta property="og:image:width" content="1200px">
-  <meta property="og:image:height" content="630px">
-  <meta property="og:url" content="https://vitorfreitas84.github.io/wdd230/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&display=swap"
-    rel="stylesheet" />
-  </head>
-  
-  <body>
-  <header>
-    <img id="header-picture" src="images/profile.jpg" alt="picture">
-    <h1 class="112">Vitor H S Freitas</h1>
-  </header>
-  <nav>
-    <button id="menu"></button>
-    <ul class="navigation">
-      <li><a class="active" href="#">Home</a></li>
-      <li><a href="#">Site Plan</a></li>
-      <li><a href="week01/chamber-site-plan.html">Chamber</a></li>
-      <li><a href="#" target="_blank">BYU-Idaho</a></li>
-      <li>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/11?lang=eng&id=p10#p10"
-          target="_blank">Scripture</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="hero-image">
-    <div class="hero-text">
-      <h1>Rio de Janeiro Temple</h1>
-    </div>
-  </div>
-  <main>
-    <div id="main-grid-title">
-      <h2>WDD 230: Web Frontend Development</h2>
-      <hr class="solid">
-    </div>
-    <section id="cards">
-      <h3>Learning activities:</h3>
-      <ol class="card-grid">
-        <li><a href="week01/holygrail.html" target="_blank">Holy Grail</a>| <a
-            href="https://codepen.io/VitorFreitas84/pen/ExJrdNP" target="_blank">CodePen</a> | <a
-            href="lesson01/media-query.html" target="_blank">CSS Media query</a></li>
-      </ol>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; <span id="yearDate"></span> </p>
-    <p>Vitor H S Freitas</p>
-    <p>Rio de Janeiro, Brazil</p>
-    <div id="lastModified"></div>
-  </footer>
-  <script src="scripts/getdates.js"></script>
-  <script>src = "scripts/links.js"</script>
-  <script src="scripts/visits.js"></script>
-  </body>
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <div class="grid-container">
+            <section class="card">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li>Week 01: 
+                        <a href="week01/chamber-site-plan.html">Chamber Site</a> |
+                        <a href="week01/contacts.html">Contact</a> |
+                        <a href="week01/holygrail.html">Holygrail</a>
+                    </li>
+                    <li>Week 02:
+                        <a href="week01/chamber-site-plan.html">Design</a> | 
+                        <a href="https://codepen.io/VitorFreitas84/pen/ExJrdNP">CodePen</a> | 
+                        <a href="week02/bom.html">DOM Manipulation</a>
+                    </li>
+                    <li>Week 03:
 
+                    </li>
+                    <li>Week 04:
+
+                    </li>
+                    <li>Week 05:
+
+                    </li>   
+                    <li>Week 06:
+
+                    </li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Information</h2>
+                <p id="weather">Weather: <span id="weatherData"></span></p>
+                <p>Number of visits: <span id="visitCount"></span></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&#169; <span id="copyrightYear"></span> * Vitor H S Freitas * Brazil</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamBurger.js"></script>
+    <script src="scripts/themeChanger.js"></script>
+</body>
 </html>
