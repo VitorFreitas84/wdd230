@@ -44,6 +44,9 @@ body {
   h2 {
     text-align: center;
   }
+  h3 {
+    text-align: center;
+  }
   hr {
     height: 3px;
     margin: 35px 0;
