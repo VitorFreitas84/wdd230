@@ -1,66 +1,46 @@
-/* Larger Screen Adjustments - larger.css */
-@media (min-width: 768px) {
-    body {
-        padding: 40px;
-    }
+@media screen and (min-width: 768px) {
 
-    header, footer {
-        text-align: left;
-        padding: 20px 40px;
+    nav ul li{
+        display: inline;
     }
-
-    h1 {
-        font-size: 2.5em;
-    }
-
-    .navigation {
-        display: flex;
-        justify-content: space-between;
+    .socmed-links{
+        display:flex;
         align-items: center;
     }
+    .socmed-links h1{
+        text-indent: 20px;
+    }
+    .socmed-links ul{
+       margin-left: auto;
+       margin-right: 20px;
+    }
 
-    .main-content {
+    .page-nav {
         display: flex;
-        justify-content: space-between;
-        gap: 20px;
+        justify-content: left; 
+        align-items:center;
     }
 
-    .sidebar {
-        flex: 1;
+    main {
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;     
+        grid-template-rows:1fr 1fr 1fr 1fr ;          
+    }
+    .hero{
+        grid-column:1/4 ;
+        grid-row:1/3;
+    }
+    .current-event{
+        grid-column:1/3 ;
+        grid-row:3/4;
+    }
+    .weather{
+        grid-column:3/4 ;
+        grid-row:3/4;
+    }
+    .spotlights{
+        grid-column:1/4;
+        grid-row:4/5;
     }
 
-    .content {
-        flex: 3;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-}
-
-/* More specific component styling */
-.hero-image {
-    width: 100%;
-    height: auto;
-    max-height: 500px;
-    object-fit: cover;
-}
-
-.call-to-action {
-    background-color: #0056b3;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-}
-
-.event-card, .weather-card, .company-spotlight {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 5px;
 }
