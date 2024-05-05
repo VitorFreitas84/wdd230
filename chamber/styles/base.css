@@ -1,62 +1,187 @@
 body {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    display: block;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
 }
 
 header {
-    display:block;
-    background: lightpink;
-
+    background-color: #005582;
+    color: white;
 }
 
-ul li{
-    list-style-type: none;
+header img {
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
+#menu {
+    font-size: 2.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+}
 
-.socmed-links{
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    font-size: 2rem;
+    content: "❌";
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #005582;
+    font-weight: bold;
+    color: white;
+}
+
+.nav a {
     display: none;
-    background: rgb(44, 34, 230); 
-}
-
-.page-nav{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    background: #fff; 
-}
-
-.home-links{
+    padding: 1rem;
     text-align: center;
+    text-decoration: none;
+    color: white;
 }
 
-.hero {
-    text-align: justify;
-    background: coral;
-    line-height:3; 
-    text-indent: 15px; 
+.nav a:hover {
+    background-color: #005c72;
+    font-weight: bolder;
 }
-.current-event {
-    text-align: justify;
-    background: yellow;
-    line-height:3; 
-    text-indent: 15px; 
+
+.open a {
+    display: block;
 }
-.weather {
-    text-align: justify;
-    background: rgb(247, 107, 247);
-    line-height:3; 
-    text-indent: 15px; 
+
+.active {
+    font-weight: bolder;
 }
-.spotlights {
-    text-align: justify;
-    background: rgb(141, 127, 223);
-    line-height:3; 
-    text-indent: 15px; 
+
+#hero {
+    position: relative;
+    text-align: center;
+    color: white
+}
+
+#hero img {
+    width: 100%;
+    filter: blur(3px) brightness(60%);
+}
+
+#hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+main {
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+
+#cta {
+    text-align: center;
+    background-color: #005582;
+    color: white;
+    width: 30dvh;
+}
+
+#cta h2 {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form input {
+    padding: 5px;
+}
+
+.name {
+    width: 130px;
+}
+
+#email {
+    width: 220px;
+}
+
+.form button {
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #006176;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #058399;
 }
 
 footer {
-    background: wheat;
-    padding: 2rem;
+    background-color: #005582;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    padding-left: 1rem;
+}
+
+#copyright {
+    grid-column: 2;
+    padding: 3rem;
     text-align: center;
+}
+
+#project {
+    grid-column: 3;
+    padding: 1rem;
+    text-align: right;
+}
+
+/* Discover Page */
+#discover {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.sidebar div {
+    background-color: #005582;
+    color: white;
+    padding: 10px;
+    margin: 15px;
+}
+
+.photos {
+    grid-column: 2;
+}
+
+.photos img {
+    width: 500px;
+    height: auto;
+}
+
+.photos img:hover {
+    filter:blur(5px) saturate(150%)
+}
+
+.photos p {
+    margin-top: 5px;
 }

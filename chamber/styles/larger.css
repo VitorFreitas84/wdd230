@@ -1,18 +1,33 @@
-@media(min-width: 768px ) {
-    nav ul {
-        display: flex;
-    }
-    nav ul li{
-        flex: 1 1 100%
-    }
-    .navigation a {
-        display: block;
-    }
-    .grid-container {
-        grid-template-columns: 2fr 1fr;
-    }
+@media screen and (min-width: 1000px) {
     #menu {
         display: none;
     }
 
+    header {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        margin-left: 20px;
+    }
+
+    .nav a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        width: 70px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #weather {
+        grid-column: 2;
+    }
 }
