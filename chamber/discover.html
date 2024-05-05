@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rio de Janeiro Chamber of Commerce</title>
+        <meta name="description" content="A chamber of commerce in Rio de Janeiro City, Brazil.">
+        <meta name="author" content="Vitor H S Freitas">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <meta property="og:title" content="WDD 230 (Web Frontend Development) progress and task links">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://vitorfreitas84.github.io/wdd230/images/images/corcovado.jpg">
+        <meta property="og:url" content="https://vitorfreitas84.github.io/wdd230/chamber">
+    </head>
+
+
+<body>
+    <header>
+        <span>Vitor Hugo Santos de Freitas</span>
+            <button id="menu"></button>
+            <div id="mode">
+                <img src="images/moon.svg" alt="dark mode" id="darkBtn" width="23" height="23" style="display: inline;">
+                <img src="images/sun.svg" alt="light mode" id="lightBtn" width="23" height="23" style="display: none;">
+            </div>
+        <img src="images/logo.png" alt="Rio de Janeiro Chamber of Commerce logo">
+        <button id="menu"></button>
+        <nav class="nav">
+            <a href="https://vitorfreitas84.github.io/wdd230/chamber">Home</a>
+            <a href="">Discover</a>
+            <a href="">Directory</a>
+            <a href="contacts.html">Contact</a>
+        </nav>
+    </header>
+    <section id="hero">
+        <img src="images/corcovado.webp" alt="Rio de Janeiuro Corcovado" width="1270" height="600" >
+        <h1>Discover Rio de Janeiro, Brazil</h1>
+    </section>
+    <main id="discover">
+        <section class="sidebar">
+            <div id="visits"></div>
+            <div>
+            <h2>Current Population</h2>
+            <p>According to the 2020 Census, the population of Rio de Janeiro, Brazil is 6,748 million.</p>
+            </div>
+            <div>
+            <h2>Events</h2>
+            <ul>
+                <li>5/04/24 - MADONNA Boat Party in Copacabana Beach</li>
+                <li>5/05/24 - The Calling in Vivo RioTheatre</li>
+                
+            </ul>
+            </div>
+            <div>
+            <h2>Places to Visit</h2>
+            <ul>
+                <li>christ redeemer</li>
+                <li>Sugar Loaf</li>
+                <li>Tijuca Forest</li>
+                <li>Rio de Janeiro Municipal Theater</li>
+                <li>Maracana Stadium</li>
+                <li>Santa Teresa</li>
+                <li>Pedra do Sal: Samba and Resitance</li>
+                <li>Ipanema Beach</li>
+            </ul>
+            </div>
+        </section>
+        <section class="photos">
+        <h3>Christ Redeemer</h3>
+        <img src="images/christredeemer.webp" alt="Christ Redeemer" loading="lazy">
+        <p>Photo by Google</p>
+        <h3>Sugar Loaf</h3>
+        <img src="images/sugarloaf.webp" alt="Sugar Loaf" loading="lazy">
+        <p>Photo by Google</p>
+        <h3>Tijuca Forest</h3>
+        <img src="images/tijucaforest.webp" alt="Tijuca Forest" loading="lazy">
+        <p>Photo by Google</p>
+        <h3>Municipal Theater</h3>
+        <img src="images/municipaltheater.webp" alt="Municipal Theater" loading="lazy">
+        <p>Photo by Google</p>
+        <h3>Maracana Stadium</h3>
+        <img src="images/maracanastadium.webp" alt="Maracana Stadium" loading="lazy">
+        <p>Photo by Google</p>
+        <h3>Pedra do Sal: Samba and Resitance</h3>
+        <img src="images/pedradosal.webp" alt="Pedra do Sal: Samba and Resitance" loading="lazy">
+        <p>Photo by Google</p>
+
+        </section>
+    </main>
+    <footer>
+        <p>&#169; <span id="copyrightYear"></span> - Vitor H S Freitas - Brazil <img src="images/brzflag.png"  alt="Brazil Flag" width="30" height="18"></p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+<section id="archive-container">
+<ul id="year-list"></ul>
+</section>
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/getDates.js"></script>
+</body>
+
+</html>
