@@ -24,7 +24,7 @@
 <body>
     <header>
         <img id="profil-picture" src="images/profile.jpg"  alt="Vitor Hugo Santos de Freitas Profile Picture"  width="75" height="100">
-        <span>Vitor Hugo Santos de Freitas</span>
+        <span style="font-size: 24px;"><strong>Vitor Hugo Santos de Freitas</strong></span>
         <button id="menu"></button>
         <div id="mode">
             <img src="images/moon.svg" alt="dark mode" id="darkBtn" width="23" height="23">
@@ -89,13 +89,21 @@
                     </li>
                 </ul>
             </section>
+            
             <section class="card">
-                <h2>Information</h2>
-                <p id="weather">Weather: <span id="weatherData"></span></p>
-                <p>Number of visits: <span id="visitCount"></span></p>
+                <h2>Informations</h2>
+                <h3>Weather</h3>
+                <iframe src="https://api.wo-cloud.com/content/widget/?geoObjectKey=16229787&language=us&region=US&timeFormat=HH:mm&windUnit=kmh&systemOfMeasurement=metric&temperatureUnit=fahrenheit" name="CW2" scrolling="no" width="170" height="192" frameborder="0" style="border: 1px solid #FFBE00;border-radius: 10px"></iframe>
+                <h3>Counter</h3>
+                <div align=center><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-Ayx940zc5Z4b5dZD-2.gif' border='0' alt='contador de visitas'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=Ayx940zc5Z4b5dZD'></script></div>
             </section>
+            <section class="card">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.625860365227!2d-43.442302399999995!3d-23.013187000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f4d0e6e8e7d%3A0x8f0f7e8f8f8f8f8f!2sBYU-I%20-%20Spring%20Semester%20-%20WDD%20230%20-%20Web%20Frontend%20Development%20I!5e0!3m2!1sen!2sus!4v1638526977567!5m2!1sen!2sus" width="600" height="380" style="border:0;" allowfullscreen="auto" loading="lazy"></iframe
+            </section>
+
         </div>
     </main>
+    
     <footer>
         <p>&#169; <span id="copyrightYear"></span> - Vitor H S Freitas - Brazil</p>
         <p>Last Modification: <span id="lastModified"></span></p>

@@ -49,7 +49,10 @@ main ul {
 
 footer {
     text-align: center;
+    background-color: #ccc;
+    color: #0c0b0b;
 }
+
 
 
 nav {
