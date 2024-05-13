@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rio de Janeiro Chamber of Commerce</title>
+        <meta name="description" content="A chamber of commerce in Rio de Janeiro City, Brazil.">
+        <meta name="author" content="Vitor H S Freitas">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <meta property="og:title" content="WDD 230 (Web Frontend Development) progress and task links">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://vitorfreitas84.github.io/wdd230/images/images/corcovado.jpg">
+        <meta property="og:url" content="https://vitorfreitas84.github.io/wdd230/chamber">
+    </head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rio de Janeiro Chamber of Commerce logo">
+        <button id="menu"></button>
+        <nav class="nav">
+            <a href="https://vitorfreitas84.github.io/wdd230/chamber">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="contacts.html">Contact</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+    <section id="hero">
+        <img src="images/christredeemer.webp" alt="Rio de Janeiro">
+        <h1>Welcome to the Rio de Janeiro Chamber of Commerce!</h1>
+    </section>
+    <main>
+        <form method="get" action="thankyou.html" class="join">
+            <h2>Join our community <b>Today</b>!</h2>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name* <input type="text" id="fname" name="fname" placeholder="Johnny" required></label>
+                <label>Last Name* <input type="text" id="lname" name="lname" placeholder="Appleseed" required></label>
+                <label>Title/Position <input type="text" id="title" name="title" pattern="[a-zA-Z\- ]{7,}"
+                        placeholder="Assistant Manager"></label>
+                <label>Email* <input type="email" id="email" name="email" placeholder="username@email.com"
+                        required></label>
+                <label>Phone* <input type="tel" id="phone" name="phone" placeholder="1235551234" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>Business/Organization Name* <input type="text" id="bname" name="bname"
+                        placeholder="Johnny's Tech Repair" required></label>
+                <label>Description of Business/Organization <textarea id="description" name="description"
+                        placeholder="Tech repair shop owned by Johnny."></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership</legend>
+                <div>Choose a membership level:</div>
+                <label><input type="radio" name="membership" value="nonprofit">Free Non-Profit Membership</label>
+                <label><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                <label><input type="radio" name="membership" value="silver">Silver Membership</label>
+                <label><input type="radio" name="membership" value="gold">Gold Membership</label>
+            </fieldset>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <div id="submit">
+                <input type="submit" value="Join the Community">
+            </div>
+        </form>
+        <table>
+            <caption>Table 1: Membership Tiers</caption>
+            <thead>
+                <tr>
+                    <th colspan="5" scope="colgroup">Membership Benefits</th>
+                </tr>
+                <th scope="col"></th>
+                <th scope="col">Non-Profit</th>
+                <th scope="col">Bronze</th>
+                <th scope="col">Silver</th>
+                <th scope="col">Gold</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cost</td>
+                    <td>Free</td>
+                    <td>$15/month</td>
+                    <td>$25/month</td>
+                    <td>$55/month</td>
+                </tr>
+                <tr>
+                    <td>Special Events</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Event Discounts</td>
+                    <td>❌</td>
+                    <td>1%</td>
+                    <td>5%</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>Trainings</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Spotlight</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div id="contact">
+            <h3>Contact Information</h3>
+            <p>Phone: +55 21 982.244.700</p>
+            <p>Email: contact@pcc.org</p>
+        </div>
+        <div id="copyright">
+            <p>&copy;2024 Vitor H S Freitas</p>
+        </div>
+        <div id="project">
+            <p>WDD230 Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+
+</html>
