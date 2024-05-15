@@ -23,115 +23,53 @@
     <meta property="og:image" content="https://vitorfreitas84.github.io/wdd230/images/hometown.jpeg">
     <meta property="og:url" content="https://vitorfreitas84.github.io/wdd230/">
 </head>
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="Fill Me In">
-    <meta name="author" content="Vitor H S Freitas">
-
-    
-
-    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
-
-
-    <!-- STYLE SHEETS -->
-    <link href="styles/normalize.css" rel="stylesheet">
-    <!-- phone-default -->
-    <link href="styles/small.css" rel="stylesheet">
-    <!-- enhance-tablet -->
-    <link href="styles/medium.css" rel="stylesheet">
-    <!-- enhance-desktop -->
-    <link href="styles/large.css" rel="stylesheet">
-    <!-- enhance-desktop -->
-    <link href="styles/form-base.css" rel="stylesheet">
-    <!-- enhance-desktop -->
-    <link href="styles/form-larger.css" rel="stylesheet">
-
-
-
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles/form.css">
 </head>
-
 <body>
-    <!-- HEADER HERE -->
     <header>
-        <h1>Course Proposal</h1>
-        <h2>Designing Web Forms</h2>
+        <!-- Include your header content here -->
     </header>
-
-
-    <!-- NAVIGATION HERE -->
     <nav>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li class="active"><a href="#">Propose</a></li>
-            <li><a href="#">Winners</a></li>
-            <li><a href="../chamber/contacts.html">Contact</a></li>
-        </ul>
+        <!-- Include your navigation content here -->
     </nav>
-
-
     <main>
-        <h1>Course Proposal Application</h1>
-    <form method="get" action="form-thanks.html">
-        <fieldset class="applicant-info">
-            <legend>Applicant Information</legend>
-            <label>First Name*<input type="text" name="fname" required></label>
-            <label>Last Name*<input type="text" name="lname" required></label>
-            <label>Phone<input type="tel" name="phone" placeholder="0123456789"></label>
-            <label>Email<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-            <label>Password<input type="pwd" name="pwd" placeholder="Aa1234@"></label>
+        <h1>Form Page</h1>
+        <form action="record.html" method="get">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
 
-        </fieldset>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 characters long and only alpha-numeric.">
 
-        <fieldset class="course-info">
-            <legend>Course Information</legend>
-            <div>Audience</div>
-            <label class="radio"><input type="radio" name="audience" value="beginner">Beginner</label>
-            <label class="radio"><input type="radio" name="audience" value="intermediate">Intermediate</label>
-            <label class="radio"><input type="radio" name="audience" value="advanced">Advanced</label>
-            
-            <div>Sofware Needed</div>
-            <label class="check"><input type="checkbox" name="editing" value="yes">Photo Dediting</label>
-            <label class="check"><input type="checkbox" name="code" value="yes">Coding</label>
-            <label class="check"><input type="checkbox" name="process" value="yes">Preprocessor</label>
-            <label class="check"><input type="checkbox" name="client" value="yes">FTP Client</label>
-        </fieldset>
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
 
-        <fieldset class="other-info">
-            <legend>Funding</legend>
-            <label>Anticipated Completion Date
-                <input type="date" name="completeDate">
-            </label>
-            <label>Course Subject
-                <select name="subject">
-                    <option value="">Please Select</option>
-                    <option value="software">Software Development</option>
-                    <option value="creative">Creative Professional</option>
-                    <option value="info">Information Technology</option>
-                    <option value="construction">Construction</option>
-                    <option value="manufacturing">Manufacturing</option>
-                    <option value="business">Business Professional</option>
-                    <option value="other">Other</option>
-                </select>
-            </label>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid BYUI email address.">
 
-            <label>How Many Authors
-                <input type="number" name="authors">
-            </label>
-        </fieldset>
+            <label for="rating">Page Rating</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="document.getElementById('ratingValue').textContent = this.value;">
+            <span id="ratingValue">5</span>
 
-        <input class="submit-button" type="submit">
-    </form>
+            <button type="submit">Submit</button>
+        </form>
     </main>
-
-
-    <!-- FOOTER HERE -->
     <footer>
-        &copy; 2024 &bull; Vitor H S Freitas &bull; vitor.hugo.freitas@hotmail.com
+        <!-- Include your footer content here -->
     </footer>
-    <script src="scritps/form-submit.js"></script>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm_password').value;
+            if (password !== confirmPassword) {
+                alert('Passwords do not match. Please try again.');
+                document.getElementById('password').value = '';
+                document.getElementById('confirm_password').value = '';
+                document.getElementById('password').focus();
+                event.preventDefault();
+            }
+        });
+    </script>
 </body>
-
 </html>
