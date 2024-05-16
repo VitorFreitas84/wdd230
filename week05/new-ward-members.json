@@ -1,0 +1,33 @@
+{
+    "familyName": "The Freitas Family",
+    "moveInDate": "11/8/1980",
+    "numberOfRecords": 5,
+    "bishopicVisited": true,
+    "familyMembers": [
+        {
+            "name": "Carlos Augusto Freitas",
+            "gender": "male",
+            "birthdate": "11/8/55"
+        },
+        {
+            "name": "Angela Maria Santos Freitas",
+            "gender": "female",
+            "birthdate": "1/25/54"
+        },
+        {
+            "name": "Leonardo Augusto Santos Freitas",
+            "gender": "male",
+            "birthdate": "7/26/95"
+        },
+        {
+            "name": "Carlos Henrique Santos de Freitas",
+            "gender": "male",
+            "birthdate": "4/21/83"
+        },
+        {
+            "name": "Vitor Hugo Santos de Freitas",
+            "gender": "male",
+            "birthdate": "5/18/84"
+        }
+    ]
+}
