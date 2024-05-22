@@ -344,3 +344,49 @@ table {
     background-color: #005582;
     color: white;
 }
+.darkBtn {
+	border: 0;
+	background: none;
+ 	position: absolute;
+    top: 3px;
+	right: 3px;
+    cursor: pointer;
+}
+.lightBtn {
+    display: none;
+	border: 0;
+	background: none;
+ 	position: absolute;
+    top: 3px;
+    right: 3px;
+    cursor: pointer;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+ 	position: absolute;
+    right: 3px;
+    bottom: 0;
+    cursor: pointer;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.open a {
+	display: block;
+}
+.navigation a {
+	display: none;
+}
+
+.open a {
+	display: block;
+}
