@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #005582;
+    background-color:  #346eab;
     color: white;
 }
 
@@ -124,7 +124,7 @@ main {
     margin: 20px;
     width: 100px;
     height: 40px;
-    background-color: #006176;
+    background-color:  #615770;
     border: none;
     border-radius: 10px;
     color: white;
@@ -132,11 +132,11 @@ main {
 }
 
 .form button:hover {
-    background-color: #058399;
+    background-color: #615770;
 }
 
 footer {
-    background-color: #005582;
+    background-color: #615770;
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -257,7 +257,7 @@ footer {
 }
 
 .join input[type="submit"]:hover {
-    background-color: #058399;
+    background-color: #fff3c1;
 }
 
 .join input:required {
@@ -277,7 +277,7 @@ table {
     margin: 5px 20px;
     width: 120px;
     height: 60px;
-    background-color: #006176;
+    background-color: #0113cf;
     border: none;
     border-radius: 10px;
     color: white;
@@ -285,7 +285,7 @@ table {
 }
 
 #grid_toggle button:hover {
-    background-color: #058399;
+    background-color: #2511a5;
 }
 
 .grid {
@@ -295,7 +295,7 @@ table {
     justify-items: center;
     padding: 1rem;
     border-style: solid;
-    border-color: #005c72;
+    border-color: #5c35f558;
     background-color: #005582;
     border-width: 1rem;
     grid-gap: 5px;
@@ -307,7 +307,7 @@ table {
     padding-top: 1rem;
     text-align: center;
     color: white;
-    background-color: #005c72;
+    background-color: #a6b1f991;
 }
 
 .grid p {
