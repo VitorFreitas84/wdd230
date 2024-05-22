@@ -23,79 +23,42 @@
     </head>
 
     <body>
-        <header>
-            <span>Vitor Hugo Santos de Freitas</span>
-                <button id="menu"></button>
-                <div id="mode">
-                    <img src="images/moon.svg" alt="dark mode" id="darkBtn" width="23" height="23" style="display: inline;">
-                    <img src="images/sun.svg" alt="light mode" id="lightBtn" width="23" height="23" style="display: none;">
-                </div>
-            <img src="images/logo.png" alt="Rio de Janeiro Chamber of Commerce logo">
-            <button id="menu"></button>
-            <nav class="nav">
-                <a href="https://vitorfreitas84.github.io/wdd230/chamber">Home</a>
-                <a href="discover.html">Discover</a>
-                <a href="directory.html">Directory</a>
-                <a href="contacts.html">Contact</a>
-                <a href="join.html">Join</a>
-            </nav>
-        </header>
-
+      <header>
+        <img src="images/logo.png" alt="Rio de Janeiro Chamber of Commerce logo">
+        <button id="menu"></button>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html"  class="active" >Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
     </header>
-    <main>
-  
-      <div class="members-menu">
-        <button id="grid" class="material-symbols-outlined" title="Grid view" autofocus>grid_on</button>
-        <button id="list" class="material-symbols-outlined" title="List view">list</button>
-      </div>
-  
-      <div class="grid">
-  
-      </div>
-  
-    </main>
-    <footer>
-      <!-- logo -->
-      <div class="footer-logo">
-        <a href="index.html">
-          <picture>
-            <source media="(max-width: 100px)" srcset="images/logo-small.webp">
-            <source media="(max-width: 150px)" srcset="images/logo-medium.webp">
-            <img src="images/sugarloaf.webp" width="200" height="200" alt="Rio de Janeiro Chamber of Commerce logo">
-          </picture>
-        </a>
-        <h2>Rio de Janeiro<br>Chamber of Commerce</h2>
-      </div>
-      <!-- address -->
-      <div>
-        <h3>Location</h3>
-        <a href="https://www.google.com/maps/place/R.+Mal.+Bittencourt,+138+-+Riachuelo,+Rio+de+Janeiro+-+RJ,+20950-200,+Brasil/@-22.9047413,-43.2609712,17z/data=!3m1!4b1!4m6!3m5!1s0x997dd6b935ea13:0xa56202c42984e07a!8m2!3d-22.9047414!4d-43.2560949!16s%2Fg%2F11c5fxtb5x?entry=ttu" target="_blank">Rua Marechal Bittencourt 138<br>Rio de janeiro</a>
-      </div>
-      <!-- contact -->
-      <div>
-        <h3>Contact</h3>
-        <p>info@riodejaneiro.org<br>+(55) 21-982.244.700</p>
-      </div>
-      <!-- social media -->
-      <div>
-        <h3>Follow us</h3>
-        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.webp" alt="Facebook logo" width="40"
-            height="40" loading="lazy"></a>
-        <a href="https://mx.linkedin.com/" target="_blank"><img src="images/linkedin.webp" alt="Linkedin logo" width="40"
-            height="40" loading="lazy"></a>
-        <a href="https://twitter.com/" target="_blank"><img src="images/x.webp" alt="X logo" width="40" height="40"
-            loading="lazy"></a>
-      </div>
-      <hr>
-       <footer>
-        <p>&#169; <span id="copyrightYear"></span> - Vitor H S Freitas - Brazil</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
-    </footer>
-    </footer>
-    <script src="scripts/hamburgerbutton.js"></script>
-    <script src="scripts/getdates.js"></script>
-    <script src="scripts/darkmode.js"></script>
-    <script src="scripts/links.js"></script>
-  </body>
-  
-  </html>
+    <section id="hero">
+      <img src="images/Cidade_Maravilhosa.webp" alt="Rio de Janeiro">
+      <h1>Welcome to the Rio de Janeiro Chamber of Commerce!</h1>
+  </section>
+  <main>
+    <div id="grid_toggle">
+        <button id="grid">Grid View</button>
+        <button id="list">List View</button>
+    </div>
+    <div id="cards" class="grid"></div>
+</main>
+<footer>
+  <div id="contact">
+      <h3>Contact Information</h3>
+      <p>Phone: +55 21 982244700</p>
+      <p>Email: contact@rj.org</p>
+  </div>
+  <div id="copyright">
+      <p>&copy;2024 Vitor H S Freitas</p>
+  </div>
+  <div id="project">
+      <p>WDD230 Project</p>
+      <p id="lastModified"></p>
+  </div>
+</footer>
+<script src="scripts/directory.js"></script>
+</body>
+
+</html>

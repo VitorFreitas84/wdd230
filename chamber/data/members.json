@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Marius Restaunt",
+            "address": "Av. Atlântica, 290 Copacabana, Rio de Janeiro - RJ - Brazil",
+            "phone": "+55 21 2275-0652",
+            "website": "https://marius.com.br",
+            "logo": "marius",
+            "membership": "Gold",
+            "hours": "Open all day"
+        },
+        {
+            "name": "Christ Redeemer",
+            "address": "Cosme Velho Street, 513 - Cosme Velho, Rio de Janeiro - RJ - Brazil",
+            "phone": "+55 21 2558-1329",
+            "website": "https://www.tremdocorcovado.rio",
+            "logo": "corcovado",
+            "membership": "Gold",
+            "hours": "Mon-Fri 8am-5pm, Sat-Sun 8am-6pm"
+        },
+        {
+            "name": "Sugar Loaf",
+            "address": "AV. Pasteur, 520 - Urca - Rio de Janeiro - RJ - Brazil",
+            "phone": "+55 21 2546-8433",
+            "website": "https://bondinho.com.br",
+            "logo": "sugarloaf",
+            "membership": "Silver",
+            "hours": "Mon-Thu 9am-8pm, Fri-Sun 8am-9pm"
+        },
+        {
+            "name": "Tijuca Forest Nacional Park",
+            "address": "Estrada da Cascatinha, - Alto da Boa Vista, Rio de Janeiro - RJ - Brazil",
+            "phone": "+55 21-2492-2252",
+            "website": "https://riotur.rio/que_fazer/florestadatijuca/",
+            "logo": "tijucaforest",
+            "membership": "Non-Profit",
+            "hours": "Mon-Fri 8am-5pm, Sat-Sun 8am-6pm"
+        },
+        {
+            "name": "Municipal Theater",
+            "address": "Floriano Square – Towndown, Rio de Janeiro",
+            "phone": "+55 21 2332-9191",
+            "website": "http://theatromunicipal.rj.gov.br",
+            "logo": "municipaltheater",
+            "membership": "Gold",
+            "hours": "Mon-Fri 10am-6pm, Sat-Sun 10am-4pm"
+        },
+        {
+            "name": "Santa Tereza Tramway",
+            "address": " Lelio Gama Street, 2 - Rio de Janeiro - RJ - Brazil",
+            "phone": "(304) 555-2345",
+            "website": "https://riotur.rio/que_fazer/bondinho-de-santa-teresa/",
+            "logo": "santatereza",
+            "membership": "Silver",
+            "hours": "All Day"
+        },
+        {
+            "name": "Ipanema Beach Hostel",
+            "address": "Rua Paul Redfern, 37, Ipanema – Rio de Janeiro - Brazil",
+            "phone": "+55 21 2143-2685",
+            "website": "https://hostelipanemabeach.com",
+            "logo": "ipanemabeach",
+            "membership": "Bronze",
+            "hours": "All day"
+        }
+    ]
+}
