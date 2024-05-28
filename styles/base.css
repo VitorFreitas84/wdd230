@@ -1,165 +1,155 @@
 body {
-    min-width: 400px;
-    align-items: center;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8f8;
 }
-
-header {
-    position: relative;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-}
-
-#profil-picture{
-    margin: 5px;
-}
-
-.hero{
-    position: relative;
-}
-.hero img{
-    width: 100%;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-
-}
-.herolabel {
-    position: absolute;
-    top: 20px;
-    left: 5%;
-	background:#ccc;
-	padding: 1rem;
-	opacity: .75;
-}
-.herolabel p {
-	margin: 0;
-	padding: .25rem;
-	font-weight: 700;
-	font-size: 20px;
-}
-
 
 main {
-    margin: auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template: 1fr auto / auto;
+    gap: 10px;
 }
 
-main section {
-    border-radius: 10px;
-    margin: 10px;
-    min-height: 180px;
+#profile {
+    width: 110px;
+    height: 140px;
 }
 
-main ul {
-    list-style: none;
-    padding: 10px;
-    text-align: left;
-    margin-left: 20px;
-}
-.map{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.map iframe{
-    width: 95%;
-    height: 450px;
-    padding: 1rem;
-}
-footer {
-    padding: 2em;
-    text-align: center;
-}
-
-
-nav {
- margin: 0 auto;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav a{
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    padding: .5rem;
-}
-
-
-h1{
-    text-align: center;
-    margin: 1rem 0 .5rem;
-    
-}
-
-.card li{
-    list-style: none;
+h1 {
+    grid-column: 1 / -1;
 }
 
 .card {
+    background-color: #f0f0f0;
     padding: 20px;
     border-radius: 8px;
 }
 
-.card h2 {
-    text-align: center; 
-    padding: 10px; 
-    border-radius: 5px; 
-    margin: 0;
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-.darkBtn {
-	border: 0;
-	background: none;
- 	position: absolute;
-    top: 3px;
-	right: 3px;
-    cursor: pointer;
-}
-.lightBtn {
-    display: none;
-	border: 0;
-	background: none;
- 	position: absolute;
-    top: 3px;
-    right: 3px;
-    cursor: pointer;
+header span {
+    font-size: xx-large;
+    padding: 10px;
 }
 
 #menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
- 	position: absolute;
-    right: 3px;
-    bottom: 0;
-    cursor: pointer;
+    border: 0;
+    background: none;
+    color: rgb(3, 17, 140);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
-#menu::before {
-	content: "☰";
+.open {
+    display: flex;
 }
 
 #menu.open::before {
-	content: "X";
+    content: "X";
 }
 
-.open a {
-	display: block;
-}
-.navigation a {
-	display: none;
+#menu::before {
+    content: "\2630";
 }
 
-.open a {
-	display: block;
+nav {
+    display: none;
+    background-color: #444444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+}
+
+nav a {
+    color: rgb(215, 215, 215);
+    text-decoration: none;
+    margin: 5px;
+}
+
+#overlay {
+    position: absolute;
+    top: 15rem;
+    left: 1rem;
+    font-size: 1rem;
+    background-color: rgba(254, 254, 254, 0.949);
+    padding: 10px;
+    border-radius: 50px;
+    width: 20rem;
+}
+
+#temple_hero img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#dark {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+#dark::before {
+    content: "🌑";
+}
+
+#dark.dark::before {
+    content: "☀️";
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.card.dark {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+/* Weather */
+#weather {
+    display: flex;
+    align-items: center;
+}
+
+#description {
+    margin-left: 5px;
+}
+
+#weather figure {
+    margin: 0px;
+}
+
+/* Links */
+#learning section {
+    display: flex;
+    align-items: center;
+}
+
+#learning p {
+    margin: 5px;
+    flex-shrink: 0;
+}
+
+#learning a{
+    padding: 0 5px;
+    margin: 5px;
+    /* flex-shrink: 1; */
 }

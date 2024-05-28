@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color:  #346eab;
+    background-color: #005582;
     color: white;
 }
 
@@ -59,10 +59,6 @@ header img {
     display: block;
 }
 
-.active {
-    font-weight: bolder;
-}
-
 #hero {
     position: relative;
     text-align: center;
@@ -87,6 +83,10 @@ header img {
 main {
     grid-gap: 1rem;
     margin: 1rem;
+}
+
+h2 {
+    margin-bottom: 0;
 }
 
 #cta {
@@ -124,7 +124,7 @@ main {
     margin: 20px;
     width: 100px;
     height: 40px;
-    background-color:  #615770;
+    background-color: #006176;
     border: none;
     border-radius: 10px;
     color: white;
@@ -132,11 +132,11 @@ main {
 }
 
 .form button:hover {
-    background-color: #615770;
+    background-color: #058399;
 }
 
 footer {
-    background-color: #615770;
+    background-color: #005582;
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -154,6 +154,11 @@ footer {
     grid-column: 3;
     padding: 1rem;
     text-align: right;
+}
+
+.active {
+    text-decoration: underline !important;
+    text-underline-offset: 5px;
 }
 
 /* Discover Page */
@@ -179,7 +184,7 @@ footer {
 }
 
 .photos img:hover {
-    filter:blur(5px) saturate(150%)
+    filter: blur(5px) saturate(150%)
 }
 
 .photos p {
@@ -257,7 +262,7 @@ footer {
 }
 
 .join input[type="submit"]:hover {
-    background-color: #fff3c1;
+    background-color: #058399;
 }
 
 .join input:required {
@@ -277,7 +282,7 @@ table {
     margin: 5px 20px;
     width: 120px;
     height: 60px;
-    background-color: #0113cf;
+    background-color: #006176;
     border: none;
     border-radius: 10px;
     color: white;
@@ -285,7 +290,7 @@ table {
 }
 
 #grid_toggle button:hover {
-    background-color: #2511a5;
+    background-color: #058399;
 }
 
 .grid {
@@ -295,7 +300,7 @@ table {
     justify-items: center;
     padding: 1rem;
     border-style: solid;
-    border-color: #5c35f558;
+    border-color: #005c72;
     background-color: #005582;
     border-width: 1rem;
     grid-gap: 5px;
@@ -307,7 +312,7 @@ table {
     padding-top: 1rem;
     text-align: center;
     color: white;
-    background-color: #a6b1f991;
+    background-color: #005c72;
 }
 
 .grid p {
@@ -344,49 +349,64 @@ table {
     background-color: #005582;
     color: white;
 }
-.darkBtn {
-	border: 0;
-	background: none;
- 	position: absolute;
-    top: 3px;
-	right: 3px;
+
+/* Banner */
+#banner {
+    text-align: center;
+    background-color: #006176;
+}
+
+#banner p {
+    color: white;
+    margin: 0;
+    padding: 1rem;
+}
+
+#closeBanner {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     cursor: pointer;
-}
-.lightBtn {
-    display: none;
-	border: 0;
-	background: none;
- 	position: absolute;
-    top: 3px;
-    right: 3px;
-    cursor: pointer;
+    background: none;
+    border: none;
 }
 
-#menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
- 	position: absolute;
-    right: 3px;
-    bottom: 0;
-    cursor: pointer;
+#closeBanner::before {
+    content: 'X';
+    color: white;
 }
 
-#menu::before {
-	content: "☰";
+/* Weather */
+#forecast {
+    display: flex;
 }
 
-#menu.open::before {
-	content: "X";
+#forecast section {
+    padding: 0 10px;
+    background-color: #005582;
+    border: solid #058399;
+    color: white;
 }
 
-.open a {
-	display: block;
-}
-.navigation a {
-	display: none;
+/* Spotlight */
+#spotlight {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    justify-items: center;
+    padding: 1rem;
+    border-style: solid;
+    border-color: #005c72;
+    background-color: #005582;
+    border-width: 1rem;
+    grid-gap: 5px;
 }
 
-.open a {
-	display: block;
+#spotlight section {
+    border-style: solid;
+    padding: 3rem;
+    padding-top: 1rem;
+    text-align: center;
+    color: white;
+    background-color: #005c72;
 }

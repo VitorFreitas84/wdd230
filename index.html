@@ -1,117 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitor Hugo Santos de Freitas - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="Welcome to Vitor H S Freitas course assignment portal for WDD 230 - Web Frontend Development. Explore the various projects of the whole course, including chamber, site plan, and form.">
+    <title>Vitor H S Freitas - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="For the WDD 230 - Web Frontend Development course. Vitor H S Freitas course assignment portal.">
     <meta name="author" content="Vitor H S Freitas">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/dark.css">
-    <link rel="stylesheet" href="styles/light.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <meta property="og:title" content="WDD 230 (Web Frontend Development) progress and task links">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://vitorfreitas84.github.io/wdd230/images/hometown.jpeg">
-    <meta property="og:url" content="https://vitorfreitas84.github.io/wdd230/">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Ryan Walker - WDD 230 - Web Frontend Development" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1495660611116-fdd372baad4d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <meta property="og:url" content="https://vitorfreitas84.github.io/wdd230/" />
+    <meta property="twitter:title" content="Vitor H S Freitas - WDD 230 - Web Frontend Development" />
+    <meta property="twitter:type" content="website" />
+    <meta property="twitter:image"
+        content="https://images.unsplash.com/photo-1495660611116-fdd372baad4d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <meta property="twitter:url" content="https://ryanwalk01.github.io/wdd230/" />
+
 </head>
+
 <body>
     <header>
-        <img id="profil-picture" src="images/profile.jpg"  alt="Vitor Hugo Santos de Freitas Profile Picture"  width="75" height="100">
-        <span style="font-size: 24px;"><strong>Vitor Hugo Santos de Freitas</strong></span>
-        <button id="menu"></button>
-        <div id="mode">
-            <img src="images/moon.svg" alt="dark mode" id="darkBtn" width="23" height="23">
-            <img src="images/sun.svg" alt="light mode" id="lightBtn" width="23" height="23" style="display: none;">
-        </div>
+        <img id="profile" src="images/profile.jpg" alt="Photo of Vitor H S Freitas" >
+        <span>Vitor H S Freitas</span>
     </header>
-    
-    <nav class="navigation">
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="week01/chamber-site-plan.html">Design</a></li>
-            <li><a href="week04/form.html">Form</a></li>
-            <li><a href="chamber/index.html">Chamber</a></li>
-        </ul>
+    <button type="button" aria-label="menu button" id="menu"></button>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="week01/chamber-site-plan.html">Design</a>
+        <a href="week04/form.html">Form</a>
+        <a href="chamber/index.html">Chamber</a>
     </nav>
-
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <div class="hero">
-                <picture>
-                    <img src="images/largetemple.webp" alt="Rio de Janeiro Temple - 2022">
-                </picture>
-            <div class="herolabel">
-                <p>Rio de Janeiro Temple</p>
+        <div id="overlay">
+            <h1>Rio de Janeiro, ID Temple</h1>
+        </div>
+        <picture id="temple_hero">
+            <source media="(max-width: 400px)" src="images/mediumtemple.webp">
+            <img src="images/largetemple.webp" alt="Rio de Janeiro, ID Temple" width="960" height="480">
+        </picture>
+        <h1>WDD 230:Web Frontend Development</h1>
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <div id="learning"></div>
+        </section>
+        <section class="card">
+            <h2>Information</h2>
+            <h3>Weather</h3>
+            <div id="weather">
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <span id="current-temp"></span>
+            <span id="description"></span><br>
             </div>
-        </div>
-        <div class="grid-container">
-            <section class="card">
-                <h2>Learning Activities</h2>
-                <ul>
-                    <li>Week 01: 
-                        <a href="week01/chamber-site-plan.html">Chamber Site</a> |
-                        <a href="week01/contacts.html">Contact</a> |
-                        <a href="week01/holygrail.html">Holygrail</a>
-                    </li>
-                    <li>Week 02:
-                        <a href="week01/chamber-site-plan.html">Design</a> | 
-                        <a href="https://codepen.io/VitorFreitas84/pen/ExJrdNP">CodePen</a> | 
-                        <a href="week02/bom.html">DOM Manipulation</a>
-                    </li>
-                    <li>Chamber Site:
-                        <a href="chamber/contacts.html">contacts.html</a> | 
-                        <a href="chamber/index.html">index.html</a> | 
-                        <a href="chamber/discover.html">discover.html</a>
-                    <li>Week 03:
-                        <a href="week03/bom.html">Week 3</a> | 
-                        <a href="week03/lazyload.html">lazyload.html</a> | 
-                        <a href="week03/responsive-images.html">responsive-images.html</a>
-                    </li>
-                    <li>Week 04:
-                        <a href="week04/tablebuild.html">tablebuild.html</a> | 
-                        <a href="week04/thanks.html">thanks.html</a> | 
-                        <a href="week04/webforms.html">webforms.html</a> |
-                        <a href="https://codepen.io/VitorFreitas84/pen/yLWLBdz">CodePen Pseudo-Classes</a>
-                    </li>
-                    <li>Week 05:
-                        <a href="#">#</a>
-                    </li>   
-                    <li>Week 06:
-                        <a href="#">#</a>
-
-                    </li>
-                </ul>
-            </section>
-            
-            <section class="card">
-                <h2>Informations</h2>
-                <h3>Weather</h3>
-                <iframe src="https://api.wo-cloud.com/content/widget/?geoObjectKey=16229787&language=us&region=US&timeFormat=HH:mm&windUnit=kmh&systemOfMeasurement=metric&temperatureUnit=fahrenheit" name="CW2" scrolling="no" width="170" height="192" frameborder="0" style="border: 1px solid #FFBE00;border-radius: 10px"></iframe>
-                <h3>Counter</h3>
-                <div align=center><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-Ayx940zc5Z4b5dZD-2.gif' border='0' alt='contador de visitas'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=Ayx940zc5Z4b5dZD'></script></div>
-            </section>
-            <section class="card">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.625860365227!2d-43.442302399999995!3d-23.013187000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f4d0e6e8e7d%3A0x8f0f7e8f8f8f8f8f!2sBYU-I%20-%20Spring%20Semester%20-%20WDD%20230%20-%20Web%20Frontend%20Development%20I!5e0!3m2!1sen!2sus!4v1638526977567!5m2!1sen!2sus" width="600" height="380" style="border:0;" allowfullscreen="auto" loading="lazy"></iframe
-            </section>
-
-        </div>
+            <h3>Number of visits:</h3>
+            <div id="visits"></div>
+        </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11998.245317802177!2d-43.4010918478177!3d-22.99900918041092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1716924554689!5m2!1spt-BR!2sbr" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
-    
     <footer>
-        <p>&#169; <span id="copyrightYear"></span> - Vitor H S Freitas - Brazil</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
+        <p>&copy;<span id="year"></span> Vitor H S Freitas - Brazil</p>
+        <p id="lastModified"></p>
+        <button id="dark" type="button" aria-label="dark mode button"></button>
     </footer>
     <script src="scripts/getDates.js"></script>
-    <script src="scripts/hamBurger.js"></script>
-    <script src="scripts/themeChanger.js"></script>
     <script src="scripts/visits.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/dark.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
+
 </html>
