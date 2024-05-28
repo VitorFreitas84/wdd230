@@ -27,56 +27,43 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    #weather {
-        grid-column: 2;
-    }
-
-    #discover {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-    }
-
-    table {
-        display: table;
-        margin: 20px auto;
-        border-collapse: collapse;
-    }
-
-    caption {
-        padding: 10px;
-        caption-side: bottom;
-        font-size: 12px;
-    }
-
-    tr:first-child th {
+    #weather-info {
+        display: flex;
+        align-items: center;
         background-color: #005582;
         color: white;
-        border-bottom: none;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-
-    th,
-    td {
-        padding: 5px 10px;
-        border: 1px solid black;
+    
+    #weather-icon {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
     }
-
-    th {
-        background-color: #014164;
-        color: white;
-        font-size: larger;
-
+    
+    .weather-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-
-    th:first-child {
-        background-color: #005582;
-        border-top: none;
+    
+    #current-temp {
+        font-size: 2rem;
+        font-weight: bold;
     }
-
-    td {
-        text-align: center;
+    
+    #description {
+        font-size: 1.2rem;
+        margin-top: 5px;
     }
-
-    tbody tr:nth-child(even) {
-        background-color: lightgrey;
+    
+    #forecast {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
+    
 }
