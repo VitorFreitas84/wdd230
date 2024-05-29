@@ -9,6 +9,8 @@
     <meta name="author" content="Vitor Hugo Santos Freitas">
     <meta property="og:title" content="WDD 230 (Web Frontend Development) progress and task links">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://vitorfreitas84.github.io/wdd230/images/images/corcovado.jpg">
+    <meta property="og:url" content="https://vitorfreitas84.github.io/wdd230/chamber">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -18,18 +20,17 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <meta property="og:image" content="https://vitorfreitas84.github.io/wdd230/images/images/corcovado.jpg">
-    <meta property="og:url" content="https://vitorfreitas84.github.io/wdd230/chamber">
 </head>
 
 <body>
-    <button id="closeBanner">❌</button>
     <div id="banner">
+        <button id="closeBanner">❌</button>
         <p>Come and join us for the Rio de Janeiro Chamber of Commerce Meet & Greet on Wednesday at 7pm!</p>
     </div>
+
     <header>
         <img src="images/logo.png" alt="Rio de Janeiro Chamber of Commerce logo">
-        <button id="menu"></button>
+        <button id="menu">☰</button>
         <nav class="nav">
             <a href="https://vitorfreitas84.github.io/wdd230/chamber">Home</a>
             <a href="discover.html">Discover</a>
@@ -38,10 +39,12 @@
             <a href="join.html" class="active">Join</a>
         </nav>
     </header>
+
     <section id="hero">
         <img src="images/Cidade_Maravilhosa.webp" alt="Rio de Janeiro City">
         <h1>Welcome to the Rio de Janeiro Chamber of Commerce!</h1>
     </section>
+
     <main>
         <section id="events">
             <h2>Current events:</h2>
@@ -51,6 +54,7 @@
                 <li>06/01 - 06/05 - Rock in Rio</li>
             </ul>
         </section>
+
         <section id="weather">
             <h3>Current Weather</h3>
             <span id="current-temp"></span>
@@ -58,21 +62,26 @@
             <h3>3 Day Forecast</h3>
             <div id="forecast"></div>
         </section>
-        <h2>Spotlight:</h2>
-        <div id="spotlight"></div>
+
+        <section>
+            <h2>Spotlight:</h2>
+            <div id="spotlight"></div>
+        </section>
+
         <section id="cta">
             <h2>Become a part of the community!</h2>
             <div class="form">
-                <p>First Name:</p>
-                <input class="name">
-                <p>Last Name:</p>
-                <input class="name">
-                <p>Email Address:</p>
-                <input class="emailaddress">
+                <label for="firstName">First Name:</label>
+                <input id="firstName" class="name" type="text">
+                <label for="lastName">Last Name:</label>
+                <input id="lastName" class="name" type="text">
+                <label for="email">Email Address:</label>
+                <input id="email" class="emailaddress" type="email">
                 <button>Join Now!</button>
             </div>
         </section>
     </main>
+
     <footer>
         <div id="contact">
             <h3>Contact Information</h3>
@@ -88,10 +97,11 @@
         </div>
         <p>
             <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px"src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
             </a>
         </p>
     </footer>
+
     <script src="scripts/home.js"></script>
     <script src="scripts/chamber.js"></script>
 </body>
