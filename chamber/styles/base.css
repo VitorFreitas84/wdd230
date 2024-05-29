@@ -67,7 +67,7 @@ header img {
 
 #hero img {
     width: 100%;
-    filter: blur(3px) brightness(60%);
+    filter: blur(1px) brightness(85%);
 }
 
 #hero h1 {
@@ -353,7 +353,7 @@ table {
 /* Banner */
 #banner {
     text-align: center;
-    background-color: #c50000;
+    background-color: #c91c1c;
 }
 
 #banner p {
