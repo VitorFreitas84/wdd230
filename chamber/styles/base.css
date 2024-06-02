@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -67,7 +68,7 @@ header img {
 
 #hero img {
     width: 100%;
-    filter: blur(1px) brightness(85%);
+    filter: blur(3px) brightness(60%);
 }
 
 #hero h1 {
@@ -86,7 +87,7 @@ main {
 }
 
 h2 {
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
 #cta {
@@ -94,34 +95,17 @@ h2 {
     background-color: #005582;
     color: white;
     width: 30dvh;
+    padding-bottom: 2rem;
 }
 
 #cta h2 {
-    margin: 0;
-    margin-top: 10px;
+    padding: 20px;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.form input {
-    padding: 5px;
-}
-
-.name {
-    width: 130px;
-}
-
-#emailaddress {
-    width: 220px;
-}
-
-.form button {
-    margin: 20px;
+#cta a {
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 20px;
     width: 100px;
     height: 40px;
     background-color: #006176;
@@ -131,7 +115,7 @@ h2 {
     cursor: pointer;
 }
 
-.form button:hover {
+#cta a:hover {
     background-color: #058399;
 }
 
@@ -181,10 +165,6 @@ footer {
 .photos img {
     width: 500px;
     height: auto;
-}
-
-.photos img:hover {
-    filter: blur(5px) saturate(150%)
 }
 
 .photos p {
@@ -353,16 +333,16 @@ table {
 /* Banner */
 #banner {
     text-align: center;
-    background-color: #c91c1c;
+    background-color: #cf2533;
 }
 
-#banner p {
+.banner p {
     color: white;
     margin: 0;
     padding: 1rem;
 }
 
-#closeBanner {
+.closeBanner {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -371,7 +351,7 @@ table {
     border: none;
 }
 
-#closeBanner::before {
+.closeBanner::before {
     content: '';
     color: white;
 }
