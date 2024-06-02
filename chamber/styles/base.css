@@ -336,13 +336,13 @@ table {
     background-color: #cf2533;
 }
 
-.banner p {
+#banner p {
     color: white;
     margin: 0;
     padding: 1rem;
 }
 
-.closeBanner {
+#closeBanner {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -361,7 +361,7 @@ table {
     display: flex;
 }
 
-#forecast section {
+.forecast section {
     padding: 0 10px;
     background-color: #005582;
     border: solid #058399;
@@ -369,7 +369,7 @@ table {
 }
 
 /* Spotlight */
-#spotlight {
+.spotlight {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -382,7 +382,7 @@ table {
     grid-gap: 5px;
 }
 
-#spotlight section {
+.spotlight section {
     border-style: solid;
     padding: 3rem;
     padding-top: 1rem;
